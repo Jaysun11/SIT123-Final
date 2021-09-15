@@ -1,0 +1,110 @@
+body{
+    font-family: 'Roboto Mono', monospace;
+    background: url('bgImage.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+#connect-buttons{
+  width:235px;
+}
+
+#innerbox{
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  width:80%;
+  height:410px;
+}
+
+#warningBox{
+  display:none;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  color: red;
+  width:80%;
+  margin-top:10px;
+}
+
+.box{
+  float:left;
+  width:48%;
+  margin:1%;
+  margin-top:0px;
+}
+
+
+.centre {
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.button-connect{
+  display:inline;
+  width:110px;
+  padding:0.46em 1.6em;
+  border:0.1em solid #000000;
+  margin:0 0.2em 0.2em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#000000;
+  text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+  background-color:#FFFFFF;
+  text-align:center;
+  transition: all 0.15s;
+  border-radius:5px;
+}
+.button-connect:hover{
+  text-shadow: 0 0 2em rgba(255,255,255,1);
+  color:white;
+  border-color: black;
+  background-color:gray;
+}
+@media all and (max-width:30em){
+  .button-connect{
+    display:block;
+    margin:0.4em auto;
+  }
+}
+
+
+.button-disconnect{
+  display:inline;
+  width:110px;
+  padding:0.46em 1.6em;
+  border:0.1em solid #000000;
+  margin:0 0.2em 0.2em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#000000;
+  text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+  background-color:#FFFFFF;
+  text-align:center;
+  transition: all 0.15s;
+  border-radius:5px;
+}
+.button-disconnect:hover{
+  text-shadow: 0 0 2em rgba(255,255,255,1);
+  color:white;
+  border-color: black;
+  background-color:gray;
+}
+@media all and (max-width:30em){
+  .button-disconnect{
+    display:block;
+    margin:0.4em auto;
+  }
+}
+
+#contents{
+
+}

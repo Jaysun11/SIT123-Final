@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+
+  <div id="container" class="centre">
+
+    <div id="connect-buttons" class="centre">
+      <button class="button-connect" role="button" id="connect">Connect <span class="material-icons">bluetooth_connected</span></button>
+      <button class="button-disconnect" role="button" id="disconnect">Disconnect<span class="material-icons">bluetooth_disabled</span></button>
+    </div>
+
+
+    <div id="contents" class="centre">
+
+      <div id="innerbox" class="centre">
+        <h1 style="color: white;"><span id="dateandTime"></span></h1>
+        <h1 style="color: white;">Hey there! &#128075;</h1>
+
+        <div id="leftBox" class="box" >
+          <h1 style="color: white;">The temperature is: <span id="temp"></span></h1>
+          <h1 style="color: white;">The humidity is: <span id="humidity"></span></h1>
+          <h1 style="color: white;">CO level is: <span id="coLevel"></span></h1>
+        </div>
+        <div id="graphBox" class="box" >
+          <canvas id="chart"></canvas>
+        </div>
+      </div>
+
+      <div id="warningBox" class="centre">
+        <h1>WARNING! Dangerous Levels Of Carbon Monoxide Detected</h1>
+        <h3>Evacuate Immediately</h1>
+      </div>
+
+
+
+   </div>
+
+
+
+</div>
+
+<script src="main.js"></script>
+<script>
+  var dateTime = new Date();
+  document.getElementById("dateandTime").innerHTML = dateTime.toLocaleDateString();
+</script>
+
+</body>
+</html>
